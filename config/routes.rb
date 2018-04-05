@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within file, see http://guides.rubyonrails.org/routing.html
-  root 'application#hello'
+  resources :posts
+
+  root "static_pages#home"
+  get "static_pages/help"
+  get "static_pages/about"
+  get "static_pages/contact"
 end

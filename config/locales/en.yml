@@ -1,33 +1,32 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
   hello: "Hello world"
+  layouts:
+    application:
+      title: "Ruby on Rails Turorial Sample App"
+  static_pages:
+    home:
+      home: "Sample App"
+      title_rails_home_link: "Ruby on Rails tutorial"
+      text_home_1: "This is homepage for the"
+      text_home_2: "samppe application"
+    help:
+      help: "Help"
+      rails_help_page_link: "Rails tutorial help page"
+      rails_help_book_link_html: "<em>Ruby on Rails tutorial</em> book"
+      text_help_1: "Get help on the Ruby on Rails tutorial at the"
+      text_help_2: "To get help on this same app, see the"
+    about:
+      about: "About"
+      title_rails_about_link_html: "<em>Ruby on Rails tutorial</em>"
+      book_rails_link: "book"
+      screencast_link: "screencast series"
+      rails_link: "Ruby on Rails"
+      text_about_1: "The"
+      text_about_2: "is a"
+      text_about_3: "and"
+      text_about_4: "to teach web development with"
+      text_about_5: "This is the sample application for the tutorial."
+    contact:
+      contact: "Conctact"
+      contact_page_link: "contact page"
+      text_contact_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
