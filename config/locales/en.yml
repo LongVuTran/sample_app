@@ -1,8 +1,8 @@
 en:
   hello: "Hello world"
-  layouts:
-    application:
-      title: "Ruby on Rails Turorial Sample App"
+  #layouts:
+    #application:
+      #title: "Ruby on Rails Turorial Sample App"
   static_pages:
     home:
       home: "Sample App"
