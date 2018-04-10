@@ -1,11 +1,10 @@
 ENV["RAILS_ENV"] ||= "test"
-require File.expand_path("config/environment", __dir__)
+require File.expand_path("../config/environment", __dir__)
 require "rails/test_help"
 
-class ActiveSupport
+module ActiveSupport
   class TestCase
     fixtures :all
+    include ApplicationHelper
   end
-
-  # Add more helper methods to be used by all tests here...
 end

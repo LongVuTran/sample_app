@@ -1,14 +1,28 @@
 en:
-  hello: "Hello world"
+  helpers:
+    application_helper:
+      base-title: "Ruby on Rails Tutorial Sample App"
   layouts:
-    application:
-      title: "Ruby on Rails Turorial Sample App"
+    header:
+      sample-app: "sample_app"
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+    footer:
+      text-1: "The"
+      text-2: "by"
+      text-link-1: "Ruby on Rails Tutorial"
+      michaelhartl: "Michael Hartl"
+      about-link: "About"
+      contact-link: "Conctact"
+      new-link: "News"
   static_pages:
     home:
       home: "Sample App"
       title_rails_home_link: "Ruby on Rails tutorial"
       text_home_1: "This is homepage for the"
       text_home_2: "samppe application"
+      signup: "Sign up now!"
     help:
       help: "Help"
       rails_help_page_link: "Rails tutorial help page"
