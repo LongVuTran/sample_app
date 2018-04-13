@@ -7,6 +7,8 @@ end
 
 gem "rails", "~> 5.1.6"
 
+gem "bcrypt"
+
 gem "bootstrap-sass"
 
 gem "sprockets"
