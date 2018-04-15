@@ -1,11 +1,7 @@
 en:
   error_flash: "Access denied!"
-  cussess_flash: "Welcome to the Sample App!"
-
-  controllers:
-    users_controller:
-      error_flash: "Access denied!"
-      cussess_flash: "Welcome to the Sample App!"
+  sussess_flash: "Welcome to the Sample App!"
+  danger_flash: "Invalid email/password combination"
   helpers:
     application_helper:
       base-title: "Ruby on Rails Tutorial Sample App"
@@ -15,6 +11,11 @@ en:
       home: "Home"
       help: "Help"
       login: "Log in"
+      logout: "Log out"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      setting: "Setting"
     footer:
       text-1: "The"
       text-2: "by"
@@ -62,3 +63,8 @@ en:
       error:
         one: "%{count} error"
         other: "%{count} errors"
+  sessions:
+    new:
+      login: "Log in"
+      new_user: "New user?"
+      signup_now: "Sign up now!"
