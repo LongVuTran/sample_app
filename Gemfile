@@ -9,6 +9,12 @@ gem "rails", "~> 5.1.6"
 
 gem "bcrypt"
 
+gem "faker"
+
+gem "will_paginate"
+
+gem "bootstrap-will_paginate"
+
 gem "bootstrap-sass"
 
 gem "sprockets"
@@ -28,6 +34,8 @@ gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
 
 gem "config"
+
+gem "jquery-rails"
 
 group :development, :test do
   gem "sqlite3"
