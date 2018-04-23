@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    user = User.find_by email: params[:session][:email].downcase
+    user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
       check_login_true
     else
@@ -11,13 +11,14 @@ class SessionsController < ApplicationController
   end
 
   def check_login_true
+    user = User.find_by(email: params[:session][:email].downcase)
     log_in user
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
-    redirect_to user
+    redirect_back_or user
   end
 
   def check_login_false
-    flash[:danger] = I18n.t(".danger_flash")
+    flash[:danger] = "Invalid email/password combination"
     render :new
   end
 
