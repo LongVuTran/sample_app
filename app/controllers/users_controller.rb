@@ -41,6 +41,17 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit; end
+
+  def update
+    if @user.update(user_params)
+      flash[:success] = "Profile updated"
+      redirect_to @user
+    else
+      render :edit
+    end
+  end
+
   def destroy
     User.find_by(id: params[:id]).destroy
     flash[:success] = "User deleted"
