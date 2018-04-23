@@ -36,7 +36,7 @@ class UsersEditTest < ActionDispatch::IntegrationTest
     patch user_path(@user), params: {user: {name:  name,
                                             email: email,
                                             password: "",
-                                            password_confirmation: "" }}
+                                            password_confirmation: ""}}
     assert_not flash.empty?
     assert_redirected_to @user
     @user.reload
@@ -44,4 +44,3 @@ class UsersEditTest < ActionDispatch::IntegrationTest
     assert_equal email, @user.email
   end
 end
-
